@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/up_info1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text=""
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/up_info11"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text=""
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/up_info2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text=""
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/up_info22"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text=""
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:text="Download Speed (Megabits)"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <at.grabner.circleprogress.CircleProgressView
+                        android:id="@+id/circleView1"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_centerInParent="true"
+                        app:cpv_autoTextSize="true"
+                        app:cpv_barColor="@color/colorPrimary"
+                        app:cpv_barWidth="35dp"
+                        app:cpv_innerContourSize="0dp"
+                        app:cpv_maxValue="100"
+                        app:cpv_outerContourSize="0dp"
+                        app:cpv_rimColor="@color/colorPrimaryLight"
+                        app:cpv_rimWidth="35dp"
+                        app:cpv_seekMode="true"
+                        app:cpv_showUnit="true"
+                        app:cpv_spinColor="@color/colorPrimary"
+                        app:cpv_textColor="@color/colorPrimaryDark"
+                        app:cpv_textScale="1"
+                        app:cpv_unit="%"
+                        app:cpv_unitColor="@color/colorPrimaryLight"
+                        app:cpv_unitPosition="right_top"
+                        app:cpv_unitScale="1"
+                        app:cpv_value="0" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Upload Speed (Megabits)"
+                    android:layout_marginTop="20dp"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <at.grabner.circleprogress.CircleProgressView
+                        android:id="@+id/circleView2"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_centerInParent="true"
+                        app:cpv_autoTextSize="true"
+                        app:cpv_barColor="@color/colorPrimary2"
+                        app:cpv_barWidth="35dp"
+                        app:cpv_innerContourSize="0dp"
+                        app:cpv_maxValue="100"
+                        app:cpv_outerContourSize="0dp"
+                        app:cpv_rimColor="@color/colorPrimaryLight2"
+                        app:cpv_rimWidth="35dp"
+                        app:cpv_seekMode="true"
+                        app:cpv_showUnit="true"
+                        app:cpv_spinColor="@color/colorPrimary2"
+                        app:cpv_textColor="@color/colorPrimaryDark2"
+                        app:cpv_textScale="1"
+                        app:cpv_unit="%"
+                        app:cpv_unitColor="@color/colorPrimaryLight2"
+                        app:cpv_unitPosition="right_top"
+                        app:cpv_unitScale="1"
+                        app:cpv_value="0" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
